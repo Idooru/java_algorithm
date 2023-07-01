@@ -1,16 +1,19 @@
 package org.example.doit.chap01.mytry;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Gauus {
 
     static int a = 4;
     static int b = 6;
-    static int[] swapArr;
+    static Map<Integer, Integer> swapMap;
 
     public static void main(String[] args) {
         if (a > b) {
-          swapArr = swap(a, b);
-          a = swapArr[0];
-          b = swapArr[1];
+          swapMap = swap(a, b);
+          a = swapMap.get(0);
+          b = swapMap.get(1);
         }
 
         int result = sumof(Gauus.a, Gauus.b);
@@ -23,17 +26,17 @@ public class Gauus {
         return (first + last) * (last - first + 1) / 2;
     }
 
-    static int[] swap(int a, int b) {
+    static Map<Integer, Integer> swap(int a, int b) {
         int temp = 0;
         temp = a;
         a = b;
         b = temp;
 
-        int[] arr = new int[2];
+        Map<Integer, Integer> swapMap = new HashMap<>();
 
-        arr[0] = a;
-        arr[1] = b;
-
-        return arr; 
+        swapMap.put(0, a);
+        swapMap.put(1, b);
+        return swapMap;
+        
     }
 }
