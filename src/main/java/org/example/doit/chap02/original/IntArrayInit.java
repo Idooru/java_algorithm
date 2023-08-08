@@ -1,4 +1,4 @@
-package org.example.doit.chap01.original;
+package org.example.doit.chap02.original;
 
 public class IntArrayInit {
     public static void main(String[] args) {

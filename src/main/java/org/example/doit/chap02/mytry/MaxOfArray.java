@@ -1,4 +1,4 @@
-package org.example.doit.chap01.mytry;
+package org.example.doit.chap02.mytry;
 
 import java.util.Scanner;
 
