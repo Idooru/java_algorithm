@@ -28,6 +28,9 @@ public class ReverseCopyArray {
         int[] b = {1, 2, 3};
         int[] a = new int[b.length];
 
+        System.out.println("배열 b: " + Arrays.toString(b));
+        System.out.println("배열 a: " + Arrays.toString(a));
+
         rcopy(a, b);
 
         System.out.println("배열 b: " + Arrays.toString(b));
